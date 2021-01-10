@@ -1,0 +1,23 @@
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    margin: 0 0 50px 0;
+  }
+  
+  .section {
+    margin: 94px 0;
+  }
+
+  .portfolio-section {
+    margin-top: 128px;
+    margin-bottom: 60px;
+  }
+  
+  .site-header.portfolio-header {
+    border-bottom: 1px solid #ececec;
+  }

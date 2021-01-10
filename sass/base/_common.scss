@@ -1,0 +1,54 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    color: var(--title-text-color);
+  }
+
+  img {
+    display: block;
+  }
+
+  .button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+
+  .icon,
+.icon-link,
+.link,
+.company-icon,
+.button,
+.hero-button {
+  transition: var(--anitation-function);
+}
