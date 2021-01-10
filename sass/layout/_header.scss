@@ -1,13 +1,13 @@
 .site-header > .main-nav {
-    display: flex;
+    // display: flex;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
   }
   
-  .site-nav {
-    display: flex;
-  }
+  // .site-nav {
+  //   // display: flex;
+  // }
   
   .logo-end {
     color: #000000;
@@ -35,24 +35,24 @@
     border-radius: 2px;
   }
   
-  .site-nav > .item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // .site-nav > .item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
   
-  .site-nav > .item:first-child {
-    margin-left: 93px;
-  }
+  // .site-nav > .item:first-child {
+  //   margin-left: 93px;
+  // }
   
   /* Auth-nav */
   
-  .auth-nav {
-    display: flex;
-    margin-left: auto;
-  }
+  // .auth-nav {
+  //   // display: flex;
+  //   margin-left: auto;
+  // }
   
-  .auth-nav > .item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // .auth-nav > .item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
   
   .auth-nav .link {
     color: var(--primary-text-color);
@@ -60,7 +60,7 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    display: flex;
+    // display: flex;
     align-items: center;
   }
   
@@ -75,7 +75,7 @@
   .auth-nav .button {
     padding: 0;
     margin-right: 10px;
-    display: flex;
+    // display: flex;
     color: var(--primary-text-color);
     background-color: #fff;
   }

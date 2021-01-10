@@ -1,17 +1,23 @@
-.example-list {
-    margin: -15px;
+// .example-list {
+    // margin: -15px;
   
-    display: flex;
-    flex-wrap: wrap;
-  }
+    // display: flex;
+    // flex-wrap: wrap;
+  // }
   
   .example-list > .item {
-    margin: 15px 15px 0 15px;
-    width: calc((1170px - 60px) / 3);
+    // margin: 15px 15px 0 15px;
+    // width: calc((1170px - 60px) / 3);
     background-color: #ffffff;
 
-    &:nth-child(-n + 3) {
-      margin-top: 0;
+    // &:nth-child(-n + 3) {
+    //   margin-top: 0;
+    // }
+
+    @media screen and (max-width: 767px){
+      &:not(:last-child) { 
+        margin-bottom: 30px;}
+        
     }
   }
   

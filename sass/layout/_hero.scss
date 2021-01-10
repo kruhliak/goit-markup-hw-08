@@ -1,46 +1,59 @@
 .site-hero .hero-img {
-    margin-left: auto;
-    margin-right: auto;
-  
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/hero-img.jpg);
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 1600px;
-    height: 600px;
-    padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-img.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // max-width: 1600px;
+  // height: 600px;
+
+  @media screen and (max-width: 767px) {
+    padding: 118px 0;
+    height: 400px;
+    max-width: 480px;
   }
-  
-  .hero-title {
-    color: #ffffff;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-  
-    margin: 0 auto 30px auto;
-    max-width: 696px;
+
+  // padding: 200px 0;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 0 auto 30px auto;
+  // max-width: 696px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
   }
-  
-  .hero-button {
-    color: #ffffff;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-  
-    border: 0px solid transparent;
-    padding: 10px 32px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
+}
+
+.hero-button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: 0px solid transparent;
+  padding: 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

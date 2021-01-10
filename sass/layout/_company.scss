@@ -1,16 +1,27 @@
 .company-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .company-list > .item {
-  width: 170px;
+  // width: 170px;
   height: 90px;
   margin: 0;
   padding: 0;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px){
+width: calc((100% - 60px) / 2);
+margin: 15px 15px 0 15px;
+
+    
   }
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+
+  
 }
 
 .company-icon {

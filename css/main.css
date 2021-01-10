@@ -46,7 +46,7 @@ body {
 }
 
 img {
-  display: block;
+  display: inline-block;
 }
 
 .button {
@@ -56,14 +56,34 @@ img {
   border-radius: 4px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .icon,
@@ -76,9 +96,23 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -97,8 +131,6 @@ img {
 .modal {
   position: absolute;
   display: flex;
-  width: 528px;
-  height: 581px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -106,6 +138,18 @@ img {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1200px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-button {
@@ -255,20 +299,33 @@ img {
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0 0 50px 0;
+}
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin: 0 0 50px 0;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
-.section {
-  margin: 94px 0;
+@media screen and (max-width: 1199px) {
+  .section {
+    margin: 60px 0;
+  }
 }
-
-.portfolio-section {
-  margin-top: 128px;
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .section {
+    margin: 94px 0;
+  }
 }
 
 .site-header.portfolio-header {
@@ -276,14 +333,9 @@ img {
 }
 
 .site-header > .main-nav {
-  display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-}
-
-.site-nav {
-  display: flex;
 }
 
 .logo-end {
@@ -310,31 +362,13 @@ img {
   border-radius: 2px;
 }
 
-.site-nav > .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav > .item:first-child {
-  margin-left: 93px;
-}
-
 /* Auth-nav */
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-.auth-nav > .item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .auth-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  display: flex;
   align-items: center;
 }
 
@@ -349,7 +383,6 @@ img {
 .auth-nav .button {
   padding: 0;
   margin-right: 10px;
-  display: flex;
   color: var(--primary-text-color);
   background-color: #fff;
 }
@@ -370,21 +403,29 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
+}
+@media screen and (max-width: 767px) {
+  .site-hero .hero-img {
+    padding: 118px 0;
+    height: 400px;
+    max-width: 480px;
+  }
 }
 
 .hero-title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
-  max-width: 696px;
+}
+@media screen and (max-width: 767px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
 }
 
 .hero-button {
@@ -396,7 +437,7 @@ img {
   letter-spacing: 0.06em;
   border: 0px solid transparent;
   padding: 10px 32px;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -414,19 +455,19 @@ img {
   overflow: hidden;
 }
 
-.feature-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+  }
 }
 
-.feature-list > .item {
-  width: calc((1170px - 90px) / 4);
-}
-.feature-list > .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 768px) {
+  .feature-list > .item {
+    margin-bottom: 30px;
+  }
 }
 
 .feature-list .icon {
-  width: 270px;
   height: 120px;
   margin: 0 0 30px 0;
   padding: 0;
@@ -444,11 +485,18 @@ img {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin: 0 0 10px 0;
 }
 
 .feature-list .text {
   margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container.work {
+    display: none;
+  }
 }
 
 .work-list {
@@ -480,12 +528,17 @@ img {
 }
 
 .section.background-accent {
-  padding: 94px 0px;
   background-color: #f5f4fa;
 }
-
-.team-list {
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .section.background-accent {
+    padding: 60px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section.background-accent {
+    padding: 94px 0px;
+  }
 }
 
 .team-list > .item {
@@ -494,8 +547,18 @@ img {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.team-list > .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .team-list > .item {
+    padding-bottom: 24px;
+  }
+  .team-list > .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list > .item {
+    padding-bottom: 30px;
+  }
 }
 
 .team-list .title {
@@ -510,10 +573,16 @@ img {
 .team-list .text {
   margin: 0 0 16px 0;
 }
+@media screen and (max-width: 767px) {
+  .team-list .text {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
 
 .team-list .icon-list {
   display: flex;
-  margin: 0 32px 30px 32px;
+  justify-content: center;
 }
 
 .team-list .icon-item:not(:last-child) {
@@ -547,16 +616,20 @@ img {
 
 .company-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .company-list > .item {
-  width: 170px;
   height: 90px;
   margin: 0;
   padding: 0;
 }
-.company-list > .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .company-list > .item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px 15px 0 15px;
+  }
 }
 
 .company-icon {
@@ -585,16 +658,12 @@ img {
 
 .site-footer {
   background: #2f303a;
+  text-align: center;
 }
 
 .site-footer > .container {
   padding-bottom: 60px;
   padding-top: 60px;
-  display: flex;
-}
-
-.site-footer .contact-info {
-  width: 231px;
 }
 
 .site-footer .logo-end {
@@ -618,8 +687,15 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.site-footer .contact:not(:last-child) {
-  padding: 0 0 9px 0;
+@media screen and (max-width: 1199px) {
+  .site-footer .contact:not(:last-child) {
+    padding: 0 0 8px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-footer .contact:not(:last-child) {
+    padding: 0 0 9px 0;
+  }
 }
 
 .site-footer .logo {
@@ -644,12 +720,12 @@ img {
 }
 
 .site-footer .follow {
-  margin-left: 70px;
-  display: block;
+  margin-bottom: 60px;
 }
 
 .follow .icon-list {
   display: flex;
+  justify-content: center;
 }
 
 .follow .icon-item:not(:last-child) {
@@ -675,13 +751,10 @@ img {
 }
 
 /* Footer form */
-.site-footer .forms {
-  margin-left: 93px;
-  padding-top: 12px;
-}
-
-.site-footer .contact-info {
-  width: 231px;
+@media screen and (max-width: 767px) {
+  .site-footer .contact-info {
+    margin-bottom: 60px;
+  }
 }
 
 .forms .title {
@@ -695,7 +768,6 @@ img {
 }
 
 .footer-form {
-  display: flex;
   align-items: center;
 }
 
@@ -706,8 +778,8 @@ img {
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
-  margin-right: 12px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   color: #fff;
   cursor: pointer;
@@ -736,4 +808,4 @@ img {
   margin-left: 10px;
 }
 
-/*# sourceMappingURL=file:///d:/GoIT/Project/goit-markup-hw-07/css/main.css.map *//*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=file:///d:/GoIT/Project/goit-markup-hw-08/css/main.css.map *//*# sourceMappingURL=main.css.map */
