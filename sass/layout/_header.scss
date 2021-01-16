@@ -13,13 +13,27 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  @media screen and (min-width:768px){
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .site-nav {
   // display: flex;
 
-  @media screen and (max-width: 787px){
+  @media screen and (max-width: 767px){
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px){
+    display: flex;
+    margin-left: 88px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px){
+    display: flex;
+    margin-left: 93px;
   }
 }
 
@@ -44,37 +58,49 @@
   width: 100%;
   height: 4px;
   left: 0;
-  // bottom: -32px;
   background-color: var(--accent-color);
   border-radius: 2px;
 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 767px) {
     bottom: -12px;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: -32px;
   }
 }
 
 .site-nav > .item:not(:last-child) {
-  // margin-right: 50px;
+  
 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
   }
 }
 
-// .site-nav > .item:first-child {
-//   margin-left: 93px;
-// }
+
 
 /* Auth-nav */
 
-// .auth-nav {
+.auth-nav {
 //   display: flex;
 //   margin-left: auto;
-// }
+@media screen and (min-width: 768px){
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 84px;
+  
+}
+}
 
-// .auth-nav > .item:not(:last-child) {
+.auth-nav > .item:not(:last-child) {
 //   margin-right: 50px;
-// }
+@media screen and (min-width: 768px){
+  margin-bottom: 10px;
+}
+}
 
 .auth-nav .link {
   color: var(--primary-text-color);
@@ -85,11 +111,15 @@
   display: flex;
   align-items: center;
   
-  @media screen and (max-width: 787px){
+  @media screen and (max-width: 767px){
     justify-content: center;
       margin-bottom: 16px;
   }
-}
+  @media screen and (min-width: 768px){
+    font-size: 12px;
+  line-height: 1.16;
+  }
+ }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -135,9 +165,14 @@
   &.is-open .icon-menu {
     display: none;
   }
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container {
+  @media screen and (max-width: 767px){
   position: absolute;
   display: none;
 
@@ -155,5 +190,9 @@
 
   &.is-open {
     display: block;
+  }
+  } 
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }

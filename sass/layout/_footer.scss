@@ -7,7 +7,17 @@
   padding-bottom: 60px;
   padding-top: 60px;
   // display: flex;
+
+  @media screen and (min-width: 787px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+.footer-contact {
+  margin: 0 165px 60px 76px;
+}
+
 
 .site-footer .logo-end {
   color: #ffffff;
@@ -104,10 +114,14 @@
 
 /* Footer form */
 
-// .site-footer .forms {
+.site-footer .forms {
+
+  @media screen and (min-width: 768px){
+    margin: 0 auto;
+  }
 //   margin-left: 93px;
 //   padding-top: 12px;
-// }
+}
 
 .site-footer .contact-info {
   @media screen and (max-width: 767px) {
@@ -146,6 +160,10 @@
   height: 50px;
   color: #fff;
   cursor: pointer;
+
+  @media screen and (min-width:787px){
+    width: 450px;
+  }
 }
 
 .footer-button {
