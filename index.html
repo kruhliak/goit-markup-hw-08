@@ -149,37 +149,49 @@
           <ul class="list work-list">
             <li class="item">
               <div class="work-thumb">
-                <img
-                  class="work-img"
-                  src="./img/box-1.jpg"
-                  alt="Верстка стилей"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <img
+                    class="work-img"
+                    srcset="
+                      ./img/Work/box_1-1x.jpg 1x,
+                      ./img/Work/box_1-2x.jpg 2x
+                    "
+                    src="./img/Work/box_1-1x.jpg"
+                    alt="Верстка стилей"
+                  />
+                </picture>
                 <div class="work-title">Десктопные приложения</div>
               </div>
             </li>
             <li class="item">
               <div class="work-thumb">
-                <img
-                  class="work-img"
-                  src="./img/box-2.jpg"
-                  alt="Выбор дизайна"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <img
+                    class="work-img"
+                    srcset="
+                      ./img/Work/box_2-1x.jpg 1x,
+                      ./img/Work/box_2-2x.jpg 2x
+                    "
+                    src="./img/Work/box_2-1x.jpg"
+                    alt="Верстка стилей"
+                  />
+                </picture>
                 <div class="work-title">Мобильные приложения</div>
               </div>
             </li>
             <li class="item">
               <div class="work-thumb">
-                <img
-                  class="work-img"
-                  src="./img/box-3.jpg"
-                  alt="Подборка цветовой гаммы"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <img
+                    class="work-img"
+                    srcset="
+                      ./img/Work/box_3-1x.jpg 1x,
+                      ./img/Work/box_3-2x.jpg 2x
+                    "
+                    src="./img/Work/box_3-1x.jpg"
+                    alt="Верстка стилей"
+                  />
+                </picture>
                 <div class="work-title">Дизайнерские решения</div>
               </div>
             </li>
@@ -194,12 +206,36 @@
 
           <ul class="list team-list">
             <li class="item">
-              <img
-                src="./img/team-1.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/team_mobile_1-1х.jpg 1x,
+                    ./img/team/team_mobile_1-2х.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team_desk_1-1x.jpg 1x,
+                    ./img/team/team_desk_1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team/team_tablet_1-1х.jpg 1x,
+                    ./img/team/team_tablet_1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/team/team_mobile_1-1х.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
+
               <h3 class="title">Игорь Демьяненко</h3>
               <p lang="en" class="text">Product Designer</p>
               <ul class="icon-list list">
@@ -234,12 +270,35 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/team-2.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/team_mobile_2-1х.jpg 1x,
+                    ./img/team/team_mobile_2-2х.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team_desk_2-1x.jpg 1x,
+                    ./img/team/team_desk_2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team/team_tablet_2-1x.jpg 1x,
+                    ./img/team/team_tablet_2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/team/team_mobile_2-1х.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
               <h3 class="title">Ольга Репина</h3>
               <p lang="en" class="text">Frontend Developer</p>
               <ul class="icon-list list">
@@ -274,12 +333,35 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/team-3.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/team_mobile_3-1х.jpg 1x,
+                    ./img/team/team_mobile_3-2х.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team_desk_3-1x.jpg 1x,
+                    ./img/team/team_desk_3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team/team_tablet_3-1x.jpg 1x,
+                    ./img/team/team_tablet_3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/team/team_mobile_3-1х.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
               <h3 class="title">Николай Тарасов</h3>
               <p lang="en" class="text">Marketing</p>
               <ul class="icon-list list">
@@ -314,12 +396,35 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/team-4.jpg"
-                alt="Фото сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/team_mobile_4-1х.jpg 1x,
+                    ./img/team/team_mobile_4-2х.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/team_desk_4-1x.jpg 1x,
+                    ./img/team/team_desk_4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team/team_tablet_4-1x.jpg 1x,
+                    ./img/team/team_tablet_4-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="./img/team/team_mobile_4-1х.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
               <h3 class="title">Михаил Ермаков</h3>
               <p lang="en" class="text">UI Designer</p>
               <ul class="icon-list list">

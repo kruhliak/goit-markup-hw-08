@@ -177,6 +177,13 @@ display: flex;
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover .icon-menu,
+  &:focus .icon-menu,
+    &:hover .icon-close,
+  &:focus .icon-close{
+    fill: var(--accent-color);
+  }
 }
 
 
