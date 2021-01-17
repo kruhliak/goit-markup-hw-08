@@ -1,32 +1,33 @@
 .company-list {
   display: flex;
-  flex-wrap: wrap;
   margin: -15px;
+  
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .company-list > .item {
-  // width: 170px;
   height: 90px;
   margin: 0;
   padding: 0;
 
-  @media screen and (max-width: 767px){
-width: calc((100% - 60px) / 2);
-margin: 15px 15px 0 15px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px 15px 0 15px;
   }
 
-@media screen and (min-width: 768px){
-  width: calc((100% - 90px) / 3);
-  margin: 15px 15px 0 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px 15px 0 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
-}
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-
-  
-
 
 .company-icon {
   display: block;

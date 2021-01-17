@@ -12,8 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // max-width: 1600px;
-  // height: 600px;
 
   @media screen and (max-width: 767px) {
     padding: 118px 0;
@@ -27,7 +25,11 @@
     max-width: 768px;
   }
 
-  // padding: 200px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero-title {

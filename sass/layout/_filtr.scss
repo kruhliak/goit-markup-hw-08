@@ -1,5 +1,5 @@
 .filtr-list {
-  // margin: 0 0 50px 0;
+  
 
   display: flex;
  
@@ -10,6 +10,9 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin: 0 0 30px 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 0 50px 0;
   }
 }
 

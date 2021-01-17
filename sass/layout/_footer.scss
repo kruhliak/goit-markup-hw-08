@@ -1,21 +1,32 @@
 .site-footer {
   background: #2f303a;
-  text-align: center;
+  @media screen and (max-width: 1199px){
+    text-align: center;
+  }
+  
 }
 
 .site-footer > .container {
   padding-bottom: 60px;
   padding-top: 60px;
-  // display: flex;
+  
 
-  @media screen and (min-width: 787px) {
+  @media screen and (min-width: 787px) and (max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .footer-contact {
-  margin: 0 165px 60px 76px;
+
+  @media screen and (max-width:1199px){
+    margin: 0 165px 60px 76px;
+  }
+ 
 }
 
 
@@ -79,8 +90,11 @@
 
 .site-footer .follow {
   margin-bottom: 60px;
-  // margin-left: 70px;
-  // display: block;
+
+  @media screen and (min-width: 1200px){
+    margin-left: 70px;
+    display: block;}
+  
 }
 
 .follow .icon-list {
@@ -119,15 +133,18 @@
   @media screen and (min-width: 768px){
     margin: 0 auto;
   }
-//   margin-left: 93px;
-//   padding-top: 12px;
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;
+    // padding-top: 12px;
+  }
+ 
 }
 
 .site-footer .contact-info {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-}
+ }
 
 .forms .title {
   font-weight: 700;
@@ -141,8 +158,12 @@
 }
 
 .footer-form {
-  // display: flex;
+  
   align-items: center;
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
 }
 
 .footer-input {
@@ -153,16 +174,19 @@
   background-color: transparent;
 
   padding: 15px 16px;
-  // margin-right: 12px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   width: 100%;
-  // width: 358px;
+  
   height: 50px;
   color: #fff;
   cursor: pointer;
 
   @media screen and (min-width:787px){
     width: 450px;
+  }
+  @media screen and (min-width: 1200px){
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }
 

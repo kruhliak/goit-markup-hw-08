@@ -368,6 +368,12 @@ h6 {
     padding-bottom: 21px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-header > .main-nav {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .site-nav {
@@ -440,10 +446,23 @@ h6 {
     margin-left: 84px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    margin-left: 305px;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .auth-nav > .item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav > .item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -462,7 +481,7 @@ h6 {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .auth-nav .link {
     font-size: 12px;
     line-height: 1.16;
@@ -482,6 +501,11 @@ h6 {
   margin-right: 10px;
   color: var(--primary-text-color);
   background-color: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav .button {
+    display: flex;
+  }
 }
 
 .auth-nav .button-icon {
@@ -561,6 +585,13 @@ h6 {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-hero .hero-img {
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+  }
+}
 
 .hero-title {
   color: #ffffff;
@@ -612,11 +643,16 @@ h6 {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: flex;
   }
 }
 
@@ -625,10 +661,18 @@ h6 {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature-list > .item {
     width: calc((100% - 60px) / 2);
     margin: 15px 15px 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list > .item {
+    width: calc((1170px - 90px) / 4);
+  }
+  .feature-list > .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -706,10 +750,15 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
   }
 }
 
@@ -728,7 +777,7 @@ h6 {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list > .item {
     width: calc((100% - 60px) / 2);
     margin: 15px 15px 0 15px;
@@ -740,6 +789,11 @@ h6 {
 @media screen and (min-width: 1200px) {
   .team-list > .item {
     padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list > .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -798,8 +852,12 @@ h6 {
 
 .company-list {
   display: flex;
-  flex-wrap: wrap;
   margin: -15px;
+}
+@media screen and (max-width: 1199px) {
+  .company-list {
+    flex-wrap: wrap;
+  }
 }
 
 .company-list > .item {
@@ -817,6 +875,14 @@ h6 {
   .company-list > .item {
     width: calc((100% - 90px) / 3);
     margin: 15px 15px 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-list > .item {
+    width: 170px;
+  }
+  .company-list > .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -846,22 +912,33 @@ h6 {
 
 .site-footer {
   background: #2f303a;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .site-footer {
+    text-align: center;
+  }
 }
 
 .site-footer > .container {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-@media screen and (min-width: 787px) {
+@media screen and (min-width: 787px) and (max-width: 1199px) {
   .site-footer > .container {
     display: flex;
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-footer > .container {
+    display: flex;
+  }
+}
 
-.footer-contact {
-  margin: 0 165px 60px 76px;
+@media screen and (max-width: 1199px) {
+  .footer-contact {
+    margin: 0 165px 60px 76px;
+  }
 }
 
 .site-footer .logo-end {
@@ -920,6 +997,12 @@ h6 {
 .site-footer .follow {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .site-footer .follow {
+    margin-left: 70px;
+    display: block;
+  }
+}
 
 .follow .icon-list {
   display: flex;
@@ -954,6 +1037,11 @@ h6 {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-footer .forms {
+    margin-left: 93px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .site-footer .contact-info {
@@ -974,6 +1062,11 @@ h6 {
 .footer-form {
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
 
 .footer-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -991,6 +1084,12 @@ h6 {
 @media screen and (min-width: 787px) {
   .footer-input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }
 
