@@ -28,6 +28,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 body.modal-open {
   overflow: hidden;
 }
@@ -76,12 +77,14 @@ h6 {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 @media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -102,16 +105,19 @@ h6 {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -130,6 +136,7 @@ h6 {
   visibility: visible;
   transition: pointer-events var(--anitation-function), opacity var(--anitation-function), visibility var(--anitation-function);
 }
+
 @media screen and (max-width: 1199px) {
   .backdrop {
     overflow-y: scroll;
@@ -147,12 +154,14 @@ h6 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -175,6 +184,7 @@ h6 {
   cursor: pointer;
   transition: fill var(--anitation-function);
 }
+
 .modal-button:hover, .modal-button:focus {
   fill: var(--accent-color);
 }
@@ -205,6 +215,7 @@ h6 {
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
+
 .form-field:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -228,6 +239,7 @@ h6 {
   padding-left: 42px;
   transition: border-color var(--anitation-function);
 }
+
 .form-input:focus, .form-input:hover {
   outline: none;
   border-color: var(--accent-color);
@@ -257,6 +269,7 @@ h6 {
   resize: none;
   transition: border-color var(--anitation-function);
 }
+
 .form-massage:focus, .form-massage:hover {
   outline: none;
   border-color: var(--accent-color);
@@ -268,6 +281,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 1199px) {
   .policy-text {
     font-size: 12px;
@@ -275,6 +289,7 @@ h6 {
     letter-spacing: 0.01em;
   }
 }
+
 .policy-text::before {
   content: "";
   display: inline-block;
@@ -317,6 +332,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 @media screen and (max-width: 1199px) {
   .section-title {
     margin: 0 0 30px 0;
@@ -324,6 +340,7 @@ h6 {
     line-height: 1.18;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section-title {
     margin: 0 0 50px 0;
@@ -337,6 +354,7 @@ h6 {
     margin: 60px 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section {
     margin: 94px 0;
@@ -355,18 +373,21 @@ h6 {
   display: flex;
   align-items: center;
 }
+
 @media screen and (max-width: 767px) {
   .site-header > .main-nav {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-header > .main-nav {
     padding-top: 21px;
     padding-bottom: 21px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-header > .main-nav {
     padding-top: 24px;
@@ -379,6 +400,7 @@ h6 {
     margin-bottom: 60px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
@@ -386,6 +408,7 @@ h6 {
     align-items: center;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-nav {
     display: flex;
@@ -415,11 +438,13 @@ h6 {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+
 @media screen and (max-width: 767px) {
   .link.active::after {
     bottom: -12px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .link.active::after {
     bottom: -32px;
@@ -431,6 +456,7 @@ h6 {
     margin-bottom: 40px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-nav > .item:not(:last-child) {
     margin-right: 50px;
@@ -445,6 +471,7 @@ h6 {
     margin-left: 84px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: flex;
@@ -458,6 +485,7 @@ h6 {
     margin-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .auth-nav > .item:not(:last-child) {
     margin-right: 30px;
@@ -474,12 +502,14 @@ h6 {
   display: flex;
   align-items: center;
 }
+
 @media screen and (max-width: 767px) {
   .auth-nav .link {
     justify-content: center;
     margin-bottom: 16px;
   }
 }
+
 @media screen and (max-width: 1199px) {
   .auth-nav .link {
     font-size: 12px;
@@ -501,6 +531,7 @@ h6 {
   color: var(--primary-text-color);
   background-color: #fff;
 }
+
 @media screen and (min-width: 1200px) {
   .auth-nav .button {
     display: flex;
@@ -524,21 +555,29 @@ h6 {
   background-color: transparent;
   margin-left: auto;
 }
+
 .menu-button .icon-close {
   display: none;
 }
+
 .menu-button.is-open .icon-close {
   display: block;
 }
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
 }
-.menu-button:hover .icon-menu, .menu-button:focus .icon-menu, .menu-button:hover .icon-close, .menu-button:focus .icon-close {
+
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu,
+.menu-button:hover .icon-close,
+.menu-button:focus .icon-close {
   fill: var(--accent-color);
 }
 
@@ -559,6 +598,7 @@ h6 {
     display: block;
   }
 }
+
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
@@ -572,6 +612,7 @@ h6 {
   background-size: cover;
   background-position: center;
 }
+
 @media screen and (max-width: 767px) {
   .site-hero .hero-img {
     padding: 118px 0;
@@ -580,11 +621,13 @@ h6 {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_mobile-1x.jpg);
   }
 }
+
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .site-hero .hero-img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_mobile-2x.jpg);
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-hero .hero-img {
     padding: 118px 0;
@@ -593,11 +636,13 @@ h6 {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_tablet-1x.jpg);
   }
 }
+
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .site-hero .hero-img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_tablet-2x.jpg);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-hero .hero-img {
     padding: 200px 0;
@@ -606,6 +651,7 @@ h6 {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_desk-1x.jpg);
   }
 }
+
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .site-hero .hero-img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero_desk-2x.jpg);
@@ -620,6 +666,7 @@ h6 {
   text-transform: uppercase;
   margin: 0 auto 30px auto;
 }
+
 @media screen and (max-width: 1199px) {
   .hero-title {
     font-size: 26px;
@@ -627,6 +674,7 @@ h6 {
     max-width: 360px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
@@ -669,6 +717,7 @@ h6 {
     margin: -15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .feature-list {
     display: flex;
@@ -680,12 +729,14 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature-list > .item {
     width: calc((100% - 60px) / 2);
     margin: 15px 15px 0 15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .feature-list > .item {
     width: calc((1170px - 90px) / 4);
@@ -758,11 +809,13 @@ h6 {
 .section.background-accent {
   background-color: #f5f4fa;
 }
+
 @media screen and (max-width: 1199px) {
   .section.background-accent {
     padding: 60px 0px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section.background-accent {
     padding: 94px 0px;
@@ -776,6 +829,7 @@ h6 {
     margin: -15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .team-list {
     display: flex;
@@ -789,6 +843,7 @@ h6 {
   text-align: center;
   padding-bottom: 24px;
 }
+
 @media screen and (max-width: 767px) {
   .team-list > .item {
     padding-bottom: 24px;
@@ -797,20 +852,23 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list > .item {
     width: calc((100% - 60px) / 2);
     margin: 15px 15px 0 15px;
   }
-  .team-list > .item:nth-child(-n+2) {
+  .team-list > .item:nth-child(-n + 2) {
     margin-top: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .team-list > .item {
     padding-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .team-list > .item:not(:last-child) {
     margin-right: 30px;
@@ -829,6 +887,7 @@ h6 {
 .team-list .text {
   margin: 0 0 16px 0;
 }
+
 @media screen and (max-width: 1199px) {
   .team-list .text {
     font-size: 16px;
@@ -872,11 +931,12 @@ h6 {
 
 .company-list {
   display: flex;
-  margin: -15px;
 }
+
 @media screen and (max-width: 1199px) {
   .company-list {
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -885,18 +945,21 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 @media screen and (max-width: 767px) {
   .company-list > .item {
     width: calc((100% - 60px) / 2);
     margin: 15px 15px 0 15px;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .company-list > .item {
     width: calc((100% - 90px) / 3);
     margin: 15px 15px 0 15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .company-list > .item {
     width: 170px;
@@ -919,10 +982,13 @@ h6 {
   align-items: center;
   color: var(--primary-icon-color);
 }
+
 .company-icon:hover, .company-icon:focus {
   border-color: var(--accent-color);
 }
-.company-icon:hover > .icon, .company-icon:focus > .icon {
+
+.company-icon:hover > .icon,
+.company-icon:focus > .icon {
   fill: var(--accent-color);
 }
 
@@ -933,6 +999,7 @@ h6 {
 .site-footer {
   background: #2f303a;
 }
+
 @media screen and (max-width: 1199px) {
   .site-footer {
     text-align: center;
@@ -943,21 +1010,30 @@ h6 {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+
 @media screen and (min-width: 787px) and (max-width: 1199px) {
   .site-footer > .container {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-footer > .container {
     display: flex;
+    align-items: baseline;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-contact {
     margin: 0 165px 60px 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    width: 231px;
   }
 }
 
@@ -982,11 +1058,13 @@ h6 {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 @media screen and (max-width: 1199px) {
   .site-footer .contact:not(:last-child) {
     padding: 0 0 8px 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-footer .contact:not(:last-child) {
     padding: 0 0 9px 0;
@@ -1001,6 +1079,7 @@ h6 {
 .site-footer .link {
   display: block;
 }
+
 .site-footer .link:focus, .site-footer .link:hover {
   color: var(--accent-color);
 }
@@ -1017,6 +1096,7 @@ h6 {
 .site-footer .follow {
   margin-bottom: 60px;
 }
+
 @media screen and (min-width: 1200px) {
   .site-footer .follow {
     margin-left: 70px;
@@ -1043,6 +1123,7 @@ h6 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .follow .icon-link:hover, .follow .icon-link:focus {
   background-color: var(--accent-color);
 }
@@ -1057,6 +1138,7 @@ h6 {
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-footer .forms {
     margin-left: 93px;
@@ -1082,6 +1164,7 @@ h6 {
 .footer-form {
   align-items: center;
 }
+
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: flex;
@@ -1101,11 +1184,13 @@ h6 {
   color: #fff;
   cursor: pointer;
 }
+
 @media screen and (min-width: 787px) {
   .footer-input {
     width: 450px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer-input {
     margin: 0 12px 0 0;
@@ -1127,6 +1212,7 @@ h6 {
   display: flex;
   align-items: center;
 }
+
 .footer-button::after {
   content: "";
   display: inline-block;
@@ -1135,5 +1221,4 @@ h6 {
   height: 24px;
   margin-left: 10px;
 }
-
-/*# sourceMappingURL=file:///d:/GoIT/Project/goit-markup-hw-08/css/main.css.map *//*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */

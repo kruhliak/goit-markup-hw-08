@@ -18,6 +18,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -26,7 +27,11 @@
   @media screen and (min-width: 768px) and (max-width:1199px){
     margin: 0 165px 60px 76px;
   }
- 
+
+  @media screen and (min-width: 1200px){
+    width: 231px
+  }
+  
 }
 
 
@@ -135,7 +140,7 @@
   }
   @media screen and (min-width: 1200px){
     margin-left: 93px;
-    // padding-top: 12px;
+    
   }
  
 }
